@@ -1,0 +1,30 @@
+var xPos = 200;
+var yPos = 200;
+var mon =84;
+var mon2=195;
+var mon3=100;
+draw = function() {
+    background(2, 4, 15);
+    fill(255, 242, 0);
+    ellipse(xPos, yPos, 10, 10);
+    fill(158, 217, 39);
+    ellipse(mon,mon2,mon3,105);
+    ellipse(mon,mon2,mon3,145);
+    xPos+=1;
+    yPos-=1;
+    mon+=1;
+    mon2-=1;
+    mon3-=1;
+    // draw a point
+point(100, 200);
+
+// draw a point of size 3
+strokeWeight(3);
+point(200, 200);
+
+// draw a point with color pink and size 10
+stroke(255, 0, 136);
+strokeWeight(10);
+point(300, 200);
+};
+
